@@ -9,16 +9,14 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID", "13335517"))
-API_HASH = os.environ.get("API_HASH", "76b6a02d5f039628ac07e72108638c1a")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5515274385:AAGEp4AqZGJrSFpnKAszJoQRRaLD6ms2oxs")
+API_ID = int(os.environ.get("API_ID", ""))
+API_HASH = os.environ.get("API_HASH", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 DROPLINK_API = os.environ.get("DROPLINK_API")
 MDISK_API = os.environ.get("MDISK_API")
 ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split(",")) if os.environ.get("ADMINS") else []
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Ravi:mdisk@cluster0.53vglyi.mongodb.net/?retryWrites=true&w=majority
-
-")
+DATABASE_URL = os.environ.get("DATABASE_URL", "")
 WEBSITE = os.environ.get('WEBSITE')
 
 #  Optionnal variables
